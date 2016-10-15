@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <head>
+	<link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+	<style>
+
+
+	</style>
+
 </head>
+
 <body>
-  <div class="Gamestatus">
-  <p>You won!!!</p>
-</div>
-<div class="playagainbutton"><p>Play again???</p></div>
-  <i class="fa fa-hand-grab-o fa-5x"></i>
-  <i class="fa fa-hand-paper-o fa-5x"></i>
-  <i class="fa fa-hand-scissors-o fa-5x"></i>
+	<div class="container">
+
+		<div class="left">
+			<h1>1P</h1>
+			<p class="hands"><i class="fa fa-hand-paper-o"></i></p>
+			<p class="label">paper</p>
+			<p class="score"><i class="fa fa-check"></i></p>
+		</div>
+
+		<div class="right">
+			<h1>2P</h1>
+			<p class="hands"><i class="fa fa-hand-grab-o"></i></p>
+			<p class="label">rock</p>
+			<p class="score"><i class="fa fa-close"></i></p>
+		</div>
+
+		<p id="message">yesss</p>
+		<p id="prompt">Play Again</p>
+
+	</div>
 </body>

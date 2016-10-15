@@ -1,29 +1,22 @@
-body{
-    color: white;
-    text-align: center;
-    background: grey;
+body {background-color: transparent; font-family: 'Montserrat', sans-serif;}
+div {padding: 10px; box-sizing: border-box;}
+.left, .right { width: 50%; height: 100%; text-align: center; padding-top: 40px;}
+.left {background-color: #ffffff; float: left;}
+.right {background-color: #E6E6E6; float: right;}
+
+h1 {color: #999999; margin-bottom: 100px;}
+.hands {font-size: 196px; margin-bottom: 60px;}
+p.label {font-size: 24px; margin-bottom: 60px;}
+p.score {font-size: 24px;}
+
+
+.container {
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	height:100vh;
 }
-i {
-  font-size: 60px
-  margin: 0 auto;
-}
-.Gamestatus p {
-  margin: 0 auto;
-  color:green;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
-}
-.playagainbutton p {
-  margin: 0 auto;
-  color:black;
-  position: absolute;
-  left: 0;
-  top: 60%;
-  width: 100%;
-  text-align: center;
-  font-size: 25px;
-}
+
+#message, #prompt {position: absolute; left: 45%;}
+#message {top: 45%; font-size: 60px;}
+#prompt	{top: 75%; font-size: 24px;}
