@@ -5,45 +5,56 @@ var result;
 
 if (roll <= 0.33)
 {
-  roll = "Rock";
+  roll = "rock";
 }
 else if (roll <= 0.66 && roll > 0.33) {
-  roll = "Paper";
+  roll = "paper";
 }
 else {
-  roll = "Scissors";
+  roll = "scissors";
   }
 
 var winners = function(results1, results2){
   if(results1 === results2){
       window.result = "Draw";
+      document.getElementById("message").innerHTML = "Draw!";
   }
   else if (results1 === "rock") {
-    if(results2 === "Paper"){
+    if(results2 === "paper"){
         window.result = "Lost";
+        document.getElementById("message").style.color = "#ff3300";
+        document.getElementById("message").innerHTML = "You lost!";
     }
     else {
       window.result = "Win";
+      document.getElementById("message").style.color = "#00e600";
     }
   }
   else if (results1 === "paper") {
-      if (results2 === "Scissors") {
+      if (results2 === "scissors") {
           window.result = "Lost";
+          document.getElementById("message").style.color = "#ff3300";
+          document.getElementById("message").innerHTML = "You lost!";
       }
       else {
           window.result = "Win";
+          document.getElementById("message").style.color = "#00e600";
       }
     }
     else if (results1 === "scissors") {
-      if (results2 === "Rock") {
+      if (results2 === "rock") {
           window.result = "Lost";
+          document.getElementById("message").style.color = "#ff3300";
+          document.getElementById("message").innerHTML = "You lost!";
       }
       else {
           window.result = "Win";
+          document.getElementById("message").style.color = "#00e600";
       }
 
     }
   }
+
 
 winners(player, roll);
 
