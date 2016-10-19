@@ -3,24 +3,28 @@ var player = player.toLowerCase();
 var roll = Math.random();
 var result;
 var player2Hands = document.getElementById("player2");
+var player2Labels = document.getElementById("player2label");
 
 //identification of computer choice and changes to the dom to reflect that
 if (roll <= 0.33)
 {
   roll = "rock";
-  document.getElementById("player2label").innerHTML = "<span class='p.label'>Rock</span>";
+  player2Labels.className = "label";
+  player2Labels.innerHTML = "Rock";
   player2Hands.className = "hands";
   player2Hands.innerHTML = "<i class=\"fa fa-hand-rock-o\"></i>";
 }
 else if (roll <= 0.66 && roll > 0.33) {
   roll = "paper";
-  document.getElementById("player2label").innerHTML = "<span class='p.label'>Paper</span>";
+  player2Labels.className = "label";
+  player2Labels.innerHTML = "Paper";
   player2Hands.className = "hands";
   player2Hands.innerHTML = "<i class=\"fa fa-hand-paper-o\"></i>";
 }
 else {
   roll = "scissors";
-  document.getElementById("player2label").innerHTML = "<span class='p.label'>Scissors</span>";
+  player2Labels.className = "label";
+  player2Labels.innerHTML = "Scissors";
   player2Hands.className = "hands";
   player2Hands.innerHTML = "<i class=\"fa fa-hand-scissors-o\"></i>";
   }
