@@ -2,23 +2,38 @@ var player = prompt("Rock, paper, or scissors?");
 var player = player.toLowerCase();
 var roll = Math.random();
 var result;
+var player2LabelID = document.getElementById("player2label")
 
+//identification of computer choice and changes to the dom to reflect that
 if (roll <= 0.33)
 {
   roll = "rock";
-  document.getElementById("player2label").innerHTML = "Rock";
-  document.getElementById("player2").innerHTML = "&#f255";
+  player2LabelID.innerHTML = "Rock";
+  document.getElementById("player2").innerHTML = "<i class=\"fa fa-hand-rock-o\" style=\"font-size:196px;\"></i>";
 }
 else if (roll <= 0.66 && roll > 0.33) {
   roll = "paper";
-  document.getElementById("player2label").innerHTML = "Paper";
-  document.getElementById("player2").innerHTML = "&#f256";
+  player2LabelID.innerHTML = "Paper";
+  document.getElementById("player2").innerHTML = "<i class=\"fa fa-hand-paper-o\" style=\"font-size:196px;\"></i>";
 }
 else {
   roll = "scissors";
-  document.getElementById("player2label").innerHTML = "Scissors";
-  document.getElementById("player2").innerHTML = "&#f257";
+  player2LabelID.innerHTML = "Scissors";
+  document.getElementById("player2").innerHTML = "<i class=\"fa fa-hand-scissors-o\" style=\"font-size:196px;\"></i>";
   }
+
+/*changes for player text to identify whether he used r, p, or s
+if (player = "rock")
+{
+  document.getElementById("player1label").innerHTML = "Rock";
+}
+else if(player = "paper"){
+  document.getElementById("player1label").innerHTML = "Paper";
+}
+else{
+  document.getElementById("player1label").innerHTML = "Scissors";
+}
+*/
 
 var winners = function(results1, results2){
   if(results1 === results2){
