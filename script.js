@@ -6,12 +6,18 @@ var result;
 if (roll <= 0.33)
 {
   roll = "rock";
+  document.getElementById("player2label").innerHTML = "Rock";
+  document.getElementById("player2").innerHTML = "&#f255";
 }
 else if (roll <= 0.66 && roll > 0.33) {
   roll = "paper";
+  document.getElementById("player2label").innerHTML = "Paper";
+  document.getElementById("player2").innerHTML = "&#f256";
 }
 else {
   roll = "scissors";
+  document.getElementById("player2label").innerHTML = "Scissors";
+  document.getElementById("player2").innerHTML = "&#f257";
   }
 
 var winners = function(results1, results2){
