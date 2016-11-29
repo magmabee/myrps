@@ -17,8 +17,13 @@ p.score {font-size: 24px;}
 	height:100vh;
 }
 
+.winnerColor{
+	color = green;
+}
 
-#player2, #player2label, #player2score{color: #4d4d4d;}
+.loserColor{
+	color = red;
+}
 #message, #prompt, #icon {position: absolute;}
 #message {top: 45%; font-size: 60px; left: 50%; margin-left: -5.8%;}
 #prompt	{top: 75%; font-size: 24px; left: 50%; margin-left: -65px; cursor: pointer;}
